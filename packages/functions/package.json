@@ -1,0 +1,27 @@
+{
+  "name": "@xray-test/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind 'vitest'",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.110",
+    "@types/node": "^18.14.1",
+    "@types/uuid": "^9.0.1",
+    "sst": "^2.0.35"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/tracer": "^1.5.1",
+    "@aws-sdk/client-dynamodb": "^3.276.0",
+    "@aws-sdk/client-eventbridge": "^3.276.0",
+    "@aws-sdk/client-sfn": "^3.276.0",
+    "@aws-sdk/client-sns": "^3.276.0",
+    "@aws-sdk/client-sqs": "^3.276.0",
+    "@aws-sdk/lib-dynamodb": "^3.276.0",
+    "@middy/core": "^4.2.5",
+    "sst": "^2.0.35",
+    "uuid": "^9.0.0"
+  }
+}
